@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TIC TAC TOE</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>jeu</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 
-    <h1> TIC TAC TOE</h1>
-<section id="tapis">
-    <div data-index="0"  class="case"></div>
-    <div data-index="1" class="case"></div>
-    <div data-index="2"  class="case"></div>
-    <div data-index="3"  class="case"></div>
-    <div data-index="4"  class="case"></div>
-    <div data-index="5"  class="case"></div>
-    <div data-index="6"  class="case"></div>
-    <div data-index="7"  class="case"></div>
-    <div data-index="8"  class="case"></div>
+<div class="wrapper">
+    <div class="title">
+        <h1>Entrez vos coordonées</h1>
+    </div>
+    <div class="contact-form">
+        <form method="GET" class="login-form" action="jeu.html">
+            <input type="text" value="" class="pl" required name="joueur1" placeholder="Joueur 1" />
+            <select class="pl" name="play1">
+                <option>X</option>
+                <option>O</option>
+                <option>N</option>
+                <option>Q</option>
+            </select>
+            <input type="text" class="pl" value="" required name="joueur2" placeholder="Joueur 2" />
+            <select class="pl" name="play2">
+                <option>*</option>
+                <option>#</option>
+                <option>?</option>
+                <option>&</option>
+            </select>
+            <button class="btn" type="submit">Commencer la partie</button>
+        </form>
 
+    </div>
+</div>
 
-</section>
-<h2></h2>
-<button id="recommencer">Recommencer</button>
-<script src="js/main.js"></script>
 </body>
 </html>
