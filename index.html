@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>jeu</title>
     <link rel="stylesheet" href="css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -12,26 +14,30 @@
         <h1>Entrez vos coordonées</h1>
     </div>
     <div class="contact-form">
-        <form method="GET" class="login-form" action="jeu.html">
-            <input type="text" value="" class="pl" required name="joueur1" placeholder="Joueur 1" />
-            <select class="pl" name="play1">
-                <option>X</option>
-                <option>O</option>
-                <option>N</option>
-                <option>Q</option>
+        <form method="GET" class="login-form" action="jeu.html" autocomplete="off">
+            <input type="text" id="nom" value="" class="form-control pl" required name="joueur1" placeholder="Joueur 1" />
+            <select id="pion1" class="form-control pl" name="play1">
+                <option>&#x1F000</option>
+                <option>&#x1F001</option>
+                <option>&#x1F002</option>
+                <option>&#x1F003</option>
             </select>
-            <input type="text" class="pl" value="" required name="joueur2" placeholder="Joueur 2" />
-            <select class="pl" name="play2">
-                <option>*</option>
-                <option>#</option>
-                <option>?</option>
-                <option>&</option>
+            <input type="text" id="nom2" class="form-control pl" value="" required name="joueur2" placeholder="Joueur 2" />
+            <select id="pion2" class="pl form-control" name="play2">
+                <option>&#x1F007</option>
+                <option>&#x1F008</option>
+                <option>&#x1F009</option>
+                <option>&#x1F010</option>
             </select>
-            <button class="btn" type="submit">Commencer la partie</button>
+            <button class="btn btn-primary" type="submit">Commencer la partie</button>
+
         </form>
+        <img src="https://i.pinimg.com/564x/a0/17/c4/a017c41e5bb6946beb90d1cf1c99ea54.jpg" width="200px" height="auto" alt="">
 
     </div>
 </div>
+
+
 
 </body>
 </html>
